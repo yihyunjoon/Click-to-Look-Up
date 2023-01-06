@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3DF77632968B5F400BB4289 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = D3DF77622968B5F400BB4289 /* LaunchAtLogin */; };
+		D3DF77652968BCD700BB4289 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF77642968BCD700BB4289 /* SettingsView.swift */; };
 		D3FF8D8D2967E3EE00097EB6 /* ClickToLookUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF8D8C2967E3EE00097EB6 /* ClickToLookUpApp.swift */; };
 		D3FF8D8F2967E3EE00097EB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FF8D8E2967E3EE00097EB6 /* ContentView.swift */; };
 		D3FF8D912967E3EF00097EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FF8D902967E3EF00097EB6 /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3DF77642968BCD700BB4289 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D3FF8D892967E3EE00097EB6 /* Click to Look Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Click to Look Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FF8D8C2967E3EE00097EB6 /* ClickToLookUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickToLookUpApp.swift; sourceTree = "<group>"; };
 		D3FF8D8E2967E3EE00097EB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DF77632968B5F400BB4289 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 		D3FF8D8B2967E3EE00097EB6 /* ClickToLookUp */ = {
 			isa = PBXGroup;
 			children = (
+				D3DF77642968BCD700BB4289 /* SettingsView.swift */,
 				D3FF8D9B2968599F00097EB6 /* AppDelegate.swift */,
 				D3FF8D8C2967E3EE00097EB6 /* ClickToLookUpApp.swift */,
 				D3FF8D8E2967E3EE00097EB6 /* ContentView.swift */,
@@ -88,6 +93,9 @@
 			dependencies = (
 			);
 			name = "Click to Look Up";
+			packageProductDependencies = (
+				D3DF77622968B5F400BB4289 /* LaunchAtLogin */,
+			);
 			productName = ClickToLookUp;
 			productReference = D3FF8D892967E3EE00097EB6 /* Click to Look Up.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +124,9 @@
 				Base,
 			);
 			mainGroup = D3FF8D802967E3EE00097EB6;
+			packageReferences = (
+				D3DF77612968B5F400BB4289 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			productRefGroup = D3FF8D8A2967E3EE00097EB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3FF8D9C2968599F00097EB6 /* AppDelegate.swift in Sources */,
+				D3DF77652968BCD700BB4289 /* SettingsView.swift in Sources */,
 				D3FF8D8F2967E3EE00097EB6 /* ContentView.swift in Sources */,
 				D3FF8D8D2967E3EE00097EB6 /* ClickToLookUpApp.swift in Sources */,
 			);
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3DF77612968B5F400BB4289 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3DF77622968B5F400BB4289 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3DF77612968B5F400BB4289 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3FF8D812967E3EE00097EB6 /* Project object */;
 }
