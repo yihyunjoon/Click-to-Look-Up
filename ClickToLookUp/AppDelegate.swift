@@ -33,8 +33,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         
                         dDown?.post(tap: CGEventTapLocation.cgSessionEventTap)
                         dUp?.post(tap: CGEventTapLocation.cgSessionEventTap)
+                        return nil
                     }
-                    
                 default:
                     break
                 }
