@@ -4,15 +4,20 @@ import Cocoa
 @main
 struct ClickToLookUpApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    let appName = "Click to Look Up"
 
     var body: some Scene {
-        MenuBarExtra("Click to Look Up App", systemImage: "character.book.closed.fill") {
+        MenuBarExtra("\(appName) App", systemImage: "character.book.closed.fill") {
+            Button("About \(appName)") {
+                NSApp.orderFrontStandardAboutPanel()
+                NSApp.activate(ignoringOtherApps: true)
+            }
             Button("Settings...") {
                 NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
                 NSApp.activate(ignoringOtherApps: true)
             }.keyboardShortcut(",")
             Divider()
-            Button("Quit Click to Look Up") {
+            Button("Quit") {
                 NSApplication.shared.terminate(nil)
             }.keyboardShortcut("q")
         }
